@@ -150,7 +150,7 @@
 .mouth .up .lip.left {
     border-radius: 0 0 0 50px;
     transform: rotate(-15deg) translateX(-53px);
-    top: -1px;
+    top: 0px;
 }
 
 .mouth .up .lip.right {

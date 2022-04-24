@@ -241,12 +241,44 @@
     }
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(2deg);
+
+    }
+
+    40% {
+        transform: rotate(0deg);
+
+    }
+
+    60% {
+        transform: rotate(-2deg);
+
+    }
+
+    80% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .ball:hover {
     transform-origin: center bottom;
     animation: ball 2s infinite linear;
 }
 
 .ball {
+    transform-origin: center bottom;
+    animation: shake 1s infinite linear;
     height: 100px;
     width: 100px;
     border-radius: 50%;
